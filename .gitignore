@@ -1,0 +1,9 @@
+node_modules/
+build/
+.svelte-kit/
+.vercel/
+.env
+.env.*
+qa-artifacts/
+.DS_Store
+*.log

@@ -1,0 +1,69 @@
+<script>
+  import { SITE } from '$lib/site';
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Low-cap exchange arcade map',
+    description: 'How to evaluate low-cap crypto exchange pairs, liquidity, spreads, and exit routes before trading.',
+    mainEntityOfPage: `${SITE.url}/low-cap-arcade/`,
+    author: { '@type': 'Organization', name: 'Ogre Arcade Editorial Desk' }
+  };
+</script>
+
+<svelte:head>
+  <title>Low-Cap Exchange Arcade Map | Ogre Arcade</title>
+  <meta name="description" content="A retro arcade checklist for low-cap crypto exchange research: pairs, liquidity, spreads, exits, and risk sizing." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href={`${SITE.url}/low-cap-arcade/`} />
+  <script type="application/ld+json">{JSON.stringify(schema)}</script>
+</svelte:head>
+
+<section class="mx-auto max-w-4xl px-4 py-12">
+  <p class="font-pixel text-xs text-nesBlue">LEVEL 02 // LOW-CAP MAP</p>
+  <h1 class="pixel-title mt-5 text-3xl md:text-5xl text-nesWhite drop-shadow-[5px_5px_0_#a80020]">Low-Cap Exchange Arcade Map</h1>
+  <div class="pixel-card mt-8 p-6 prose-retro">
+
+Low-cap crypto markets behave less like a supermarket and more like an arcade cabinet in the corner: a small group of regular players, very specific rules, and occasional surprises.
+
+The goal is not to “ape harder.” The goal is to avoid losing coins to basic market-structure mistakes.
+
+## The four-screen map
+
+### Screen 1: Listing discovery
+
+Look for the exact asset and pair. Similar tickers can create costly mistakes. Bookmark the asset’s official explorer or project page separately so you can cross-check symbols and contract/network information.
+
+### Screen 2: Liquidity zone
+
+A market can technically exist while being hard to use. Look at:
+
+- top-of-book order size;
+- total depth around your target price;
+- recent trade rhythm;
+- whether one order dominates the book;
+- how much slippage your intended size would create.
+
+### Screen 3: Exit door
+
+Before entering a position, know the exit route. That means checking withdrawal availability, minimums, fees, confirmation expectations, and wallet readiness.
+
+### Screen 4: Risk meter
+
+For tiny markets, position sizing matters more than hype. A “cheap” coin can still be expensive if the book cannot absorb your exit.
+
+## Arcade rules for small venues
+
+- Use limit orders where possible.
+- Avoid sending more than you are ready to test.
+- Split large actions into smaller checks.
+- Keep records of deposits, trades, and withdrawals.
+- Do not store long-term funds on any exchange.
+
+## Why TradeOgre appears in low-cap conversations
+
+TradeOgre often shows up in discussions around niche pairs and privacy-coin trading routes. This is why it can be relevant for gem hunters. But relevance is not a blanket endorsement; always treat the venue as a tool to evaluate, not a magic item.
+
+<a class="pixel-button mt-4 font-pixel text-xs" href={SITE.ctaUrl} rel="sponsored nofollow noopener noreferrer" target="_blank" data-affiliate-cta="low-cap-map">▶ Open sponsored TradeOgre portal</a>
+
+  </div>
+</section>

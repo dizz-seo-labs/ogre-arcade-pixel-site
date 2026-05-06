@@ -1,0 +1,73 @@
+<script>
+  import { SITE } from '$lib/site';
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '8-bit TradeOgre gem hunter guide',
+    description: 'A practical, independent checklist for researching low-cap crypto exchange listings and TradeOgre-style markets.',
+    mainEntityOfPage: `${SITE.url}/gem-hunter-guide/`,
+    author: { '@type': 'Organization', name: 'Ogre Arcade Editorial Desk' },
+    publisher: { '@type': 'Organization', name: 'Ogre Arcade Editorial Desk' }
+  };
+</script>
+
+<svelte:head>
+  <title>8-bit TradeOgre Gem Hunter Guide | Ogre Arcade</title>
+  <meta name="description" content="Independent 8-bit checklist for researching TradeOgre-style low-cap crypto exchange markets." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href={`${SITE.url}/gem-hunter-guide/`} />
+  <script type="application/ld+json">{JSON.stringify(schema)}</script>
+</svelte:head>
+
+<section class="mx-auto max-w-4xl px-4 py-12">
+  <p class="font-pixel text-xs text-nesGreen">LEVEL 01 // GEM HUNTER GUIDE</p>
+  <h1 class="pixel-title mt-5 text-3xl md:text-5xl text-nesWhite drop-shadow-[5px_5px_0_#0058f8]">8-bit TradeOgre Gem Hunter Guide</h1>
+  <div class="pixel-card mt-8 p-6 prose-retro">
+
+TradeOgre-style exchanges appeal to a specific player type: the person who still checks tiny pairs, old-school order books, privacy-coin tickers, and low-cap markets that never make it into glossy app-store exchange funnels.
+
+This guide is not a promise that any coin, venue, or listing is safe. It is a field map for doing the boring checks before you press **START**.
+
+## What makes the arcade-style exchange lane different?
+
+Large exchanges optimize for polish: fiat ramps, heavy compliance layers, app onboarding, brand trust, and deep liquidity. Smaller niche exchanges usually optimize for a different experience:
+
+- direct market access for unusual pairs;
+- lower-friction browsing for crypto-native users;
+- more privacy-coin and low-cap discovery routes;
+- less hand-holding and more user responsibility;
+- thinner books, wider spreads, and more operational risk.
+
+That is why the “retro arcade” metaphor fits: it can be fast and fun, but there are fewer guardrails than a modern console game.
+
+## Pre-trade checklist
+
+Before using any smaller crypto exchange, run these checks:
+
+1. **Pair exists:** confirm the exact base/quote pair you need.
+2. **Book depth:** check if real orders exist near your target price.
+3. **Spread:** compare bid/ask gap before market orders.
+4. **Withdrawal route:** verify the asset withdrawal page and network notes.
+5. **Tiny test:** send and withdraw a small amount before larger trades.
+6. **Wallet hygiene:** keep long-term funds off exchanges.
+7. **Jurisdiction:** understand your local rules and account limitations.
+
+## The TradeOgre research angle
+
+TradeOgre is commonly discussed by crypto old-schoolers because it has a niche-exchange feel: compact interface, low-cap discovery energy, and a privacy-coin crowd. That does not remove risk; it changes the research job.
+
+For a user coming from big exchanges, the practical question is not “is it shiny?” but:
+
+- does it list the pair I am researching?
+- can I understand the order book?
+- can I withdraw the asset successfully?
+- is the trade size appropriate for the liquidity?
+
+## Sponsored route
+
+If your research still points you toward this lane, use the sponsored portal below. The link may earn a referral benefit for this site, at no extra cost to you.
+
+<a class="pixel-button mt-4 font-pixel text-xs" href={SITE.ctaUrl} rel="sponsored nofollow noopener noreferrer" target="_blank" data-affiliate-cta="gem-guide">▶ Sign up at TradeOgre</a>
+
+  </div>
+</section>

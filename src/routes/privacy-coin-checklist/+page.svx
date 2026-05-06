@@ -1,0 +1,67 @@
+<script>
+  import { SITE } from '$lib/site';
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Privacy coin exchange checklist',
+    description: 'A safety-focused checklist for researching privacy-coin exchange routes without making anonymity or bypass claims.',
+    mainEntityOfPage: `${SITE.url}/privacy-coin-checklist/`,
+    author: { '@type': 'Organization', name: 'Ogre Arcade Editorial Desk' }
+  };
+</script>
+
+<svelte:head>
+  <title>Privacy Coin Exchange Checklist | Ogre Arcade</title>
+  <meta name="description" content="Independent checklist for researching privacy-coin exchange routes, withdrawal tests, wallet hygiene, and risk sizing." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href={`${SITE.url}/privacy-coin-checklist/`} />
+  <script type="application/ld+json">{JSON.stringify(schema)}</script>
+</svelte:head>
+
+<section class="mx-auto max-w-4xl px-4 py-12">
+  <p class="font-pixel text-xs text-nesGreen">LEVEL 03 // PRIVACY COIN CHECKLIST</p>
+  <h1 class="pixel-title mt-5 text-3xl md:text-5xl text-nesWhite drop-shadow-[5px_5px_0_#0058f8]">Privacy Coin Exchange Checklist</h1>
+  <div class="pixel-card mt-8 p-6 prose-retro">
+
+Privacy-coin research needs careful wording and careful behavior. This page does not claim anonymity, legal bypass, or guaranteed privacy. It focuses on practical exchange due diligence for crypto-native users.
+
+## What to verify first
+
+- **Asset support:** confirm the exchange supports the exact privacy coin and network you intend to use.
+- **Deposit status:** check whether deposits are enabled before sending.
+- **Withdrawal status:** check whether withdrawals are enabled before trading.
+- **Minimums and fees:** compare the minimum withdrawal with your planned test size.
+- **Wallet readiness:** verify your receiving wallet, address format, and backup process.
+
+## The tiny-test rule
+
+For privacy-coin routes, a tiny test is not paranoia; it is basic hygiene. Send the smallest practical deposit, place a small trade if needed, then withdraw a small amount before scaling.
+
+This helps reveal problems such as:
+
+- incorrect address or payment ID expectations;
+- temporary wallet maintenance;
+- misunderstood minimums;
+- slow confirmations;
+- exchange-side withdrawal delays.
+
+## Copy claims to avoid
+
+When researching any venue, be skeptical of claims like:
+
+- guaranteed anonymity;
+- no-risk trading;
+- official wallet partnership unless sourced;
+- certain profits from obscure listings;
+- “always withdraws instantly.”
+
+Better language is specific: “check current withdrawal status,” “test with a small amount,” and “do not keep long-term funds on exchanges.”
+
+## Where TradeOgre fits
+
+TradeOgre is relevant to many privacy-coin discussions because it has historically attracted users interested in niche and privacy-adjacent markets. That is exactly why a checklist matters: the more niche the route, the more important the basics become.
+
+<a class="pixel-button mt-4 font-pixel text-xs" href={SITE.ctaUrl} rel="sponsored nofollow noopener noreferrer" target="_blank" data-affiliate-cta="privacy-checklist">▶ Continue to sponsored signup</a>
+
+  </div>
+</section>

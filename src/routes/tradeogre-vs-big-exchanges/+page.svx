@@ -1,0 +1,70 @@
+<script>
+  import { SITE } from '$lib/site';
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'TradeOgre vs big crypto exchanges',
+    description: 'A practical comparison of niche low-cap exchange workflows and large centralized crypto exchange experiences.',
+    mainEntityOfPage: `${SITE.url}/tradeogre-vs-big-exchanges/`,
+    author: { '@type': 'Organization', name: 'Ogre Arcade Editorial Desk' }
+  };
+</script>
+
+<svelte:head>
+  <title>TradeOgre vs Big Crypto Exchanges | Ogre Arcade</title>
+  <meta name="description" content="Compare TradeOgre-style niche exchange workflows with big centralized exchanges: liquidity, listings, UX, and risk controls." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href={`${SITE.url}/tradeogre-vs-big-exchanges/`} />
+  <script type="application/ld+json">{JSON.stringify(schema)}</script>
+</svelte:head>
+
+<section class="mx-auto max-w-4xl px-4 py-12">
+  <p class="font-pixel text-xs text-nesRed">LEVEL 04 // COMPARISON MODE</p>
+  <h1 class="pixel-title mt-5 text-3xl md:text-5xl text-nesWhite drop-shadow-[5px_5px_0_#00b800]">TradeOgre vs Big Crypto Exchanges</h1>
+  <div class="pixel-card mt-8 p-6 prose-retro">
+
+A big exchange feels like a modern console dashboard. A niche exchange feels like a dedicated arcade machine. Both can be useful; they simply optimize for different players.
+
+## Big exchange strengths
+
+Large centralized exchanges often provide:
+
+- stronger mainstream brand recognition;
+- fiat ramps and card/bank rails;
+- mobile apps and guided onboarding;
+- broader support documentation;
+- deeper liquidity on major assets;
+- more visible compliance workflows.
+
+These benefits matter for beginners, large positions, and users who value polished account management.
+
+## Niche exchange strengths
+
+TradeOgre-style venues can be more interesting when the target is:
+
+- a smaller coin not present on big venues;
+- a privacy-coin or crypto-native pair;
+- a compact order-book workflow;
+- low-cap discovery research;
+- a user who already understands deposits, withdrawals, wallets, and limit orders.
+
+The tradeoff is clear: less polish can mean more responsibility.
+
+## Decision framework
+
+Choose the route based on the job:
+
+- **Need fiat onboarding?** Big exchange likely fits better.
+- **Need obscure pair discovery?** Niche exchange may be worth checking.
+- **Need high liquidity?** Verify depth before assuming.
+- **Need long-term storage?** Use your own wallet, not any exchange.
+- **Need support guarantees?** Do not infer them from a listing page.
+
+## Sponsored next step
+
+If you understand the tradeoffs and want to inspect the TradeOgre route, use the sponsored link below. Keep the first action small and reversible.
+
+<a class="pixel-button mt-4 font-pixel text-xs" href={SITE.ctaUrl} rel="sponsored nofollow noopener noreferrer" target="_blank" data-affiliate-cta="vs-big-exchanges">▶ Inspect TradeOgre signup</a>
+
+  </div>
+</section>
