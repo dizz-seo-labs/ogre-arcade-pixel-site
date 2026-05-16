@@ -22,6 +22,9 @@
       { '@type': 'Question', name: 'Who is this site for?', acceptedAnswer: { '@type': 'Answer', text: 'It is written for low-cap crypto researchers, privacy-coin watchers, and nostalgic arcade-style gem hunters who want a compact checklist before using smaller exchanges.' } }
     ]
   };
+
+  const schemaScript = '<script type="application/ld+json">' + JSON.stringify(schema).replace(/</g, '\\u003c') + '</scr' + 'ipt>';
+  const faqScript = '<script type="application/ld+json">' + JSON.stringify(faq).replace(/</g, '\\u003c') + '</scr' + 'ipt>';
 </script>
 
 <svelte:head>
@@ -33,8 +36,8 @@
   <meta property="og:description" content="Pixel-art low-cap crypto exchange field guide for TradeOgre-style gem hunters." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={`${SITE.url}/`} />
-  <script type="application/ld+json">{JSON.stringify(schema)}</script>
-  <script type="application/ld+json">{JSON.stringify(faq)}</script>
+  {@html schemaScript}
+  {@html faqScript}
 </svelte:head>
 
 <section class="mx-auto max-w-6xl px-4 py-12 md:py-18 grid gap-10 lg:grid-cols-[1.15fr_.85fr] items-center">

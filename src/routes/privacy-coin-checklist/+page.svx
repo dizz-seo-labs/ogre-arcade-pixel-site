@@ -8,6 +8,8 @@
     mainEntityOfPage: `${SITE.url}/privacy-coin-checklist/`,
     author: { '@type': 'Organization', name: 'Ogre Arcade Editorial Desk' }
   };
+
+  const schemaScript = '<script type="application/ld+json">' + JSON.stringify(schema).replace(/</g, '\\u003c') + '</scr' + 'ipt>';
 </script>
 
 <svelte:head>
@@ -15,7 +17,7 @@
   <meta name="description" content="Independent checklist for researching privacy-coin exchange routes, withdrawal tests, wallet hygiene, and risk sizing." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href={`${SITE.url}/privacy-coin-checklist/`} />
-  <script type="application/ld+json">{JSON.stringify(schema)}</script>
+  {@html schemaScript}
 </svelte:head>
 
 <section class="mx-auto max-w-4xl px-4 py-12">

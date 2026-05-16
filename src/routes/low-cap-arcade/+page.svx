@@ -8,6 +8,8 @@
     mainEntityOfPage: `${SITE.url}/low-cap-arcade/`,
     author: { '@type': 'Organization', name: 'Ogre Arcade Editorial Desk' }
   };
+
+  const schemaScript = '<script type="application/ld+json">' + JSON.stringify(schema).replace(/</g, '\\u003c') + '</scr' + 'ipt>';
 </script>
 
 <svelte:head>
@@ -15,7 +17,7 @@
   <meta name="description" content="A retro arcade checklist for low-cap crypto exchange research: pairs, liquidity, spreads, exits, and risk sizing." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href={`${SITE.url}/low-cap-arcade/`} />
-  <script type="application/ld+json">{JSON.stringify(schema)}</script>
+  {@html schemaScript}
 </svelte:head>
 
 <section class="mx-auto max-w-4xl px-4 py-12">
